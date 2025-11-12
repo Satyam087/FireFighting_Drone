@@ -1,16 +1,17 @@
 # IgniraX Landing Page Design Guidelines
 
 ## Design Approach
-**Reference-Based:** SpaceX-inspired rescue tech aesthetic - combining futuristic precision with urgent, mission-critical design language. Dark, cinematic UI with strategic orange/red accent glows representing fire/urgency balanced with calm dark teal shadows representing precision and control.
+**Reference-Based:** Modern, clean tech aesthetic with SpaceX-inspired precision. Light, airy UI with greyish backgrounds and minimal black touches, featuring vibrant orange/red accents representing fire/urgency balanced with bright teal/cyan highlighting precision and technology.
 
 ## Core Design Elements
 
 ### Typography
-- **Headlines:** Bold, futuristic sans-serif (700-900 weight) for dramatic impact
+- **Headlines:** Bold, futuristic sans-serif (700-900 weight) for impact
 - **Body:** Clean sans-serif (400-500 weight) for readability
-- **News Headlines:** Medium weight (600) with high contrast for urgency
-- **Tagline:** Extra bold (800) with letter-spacing for cinematic emphasis
+- **News Headlines:** Medium weight (600) with strong contrast
+- **Tagline:** Extra bold (800) with letter-spacing for emphasis
 - **Hierarchy:** Hero tagline (4xl-6xl) → Section headers (3xl-4xl) → Body (lg-xl)
+- **Text Colors:** Dark charcoal/black on light backgrounds for strong readability
 
 ### Layout System
 - **Spacing Units:** Tailwind units of 4, 8, 12, 16, 24 for consistent rhythm
@@ -19,11 +20,11 @@
 - **Grid:** 3-column for technology features, 2-column for impact metrics
 
 ### Color Palette (Descriptive)
-- **Foundation:** Deep dark backgrounds with subtle gradients
-- **Accent Primary:** Fiery orange/red glows for urgency and CTAs
-- **Accent Secondary:** Dark teal/cyan for precision, shadows, and tech elements
-- **Text:** High-contrast white/light gray on dark backgrounds
-- **Atmospheric:** Smoky gray overlays and subtle particle effects
+- **Foundation:** Light greyish backgrounds (white to soft grey spectrum) with subtle gradients
+- **Accent Primary:** Vibrant orange/red for urgency, CTAs, and fire elements
+- **Accent Secondary:** Bright teal/cyan for precision, technology, and modern accents
+- **Text:** Dark charcoal/black primary text, medium grey secondary text
+- **Atmospheric:** Soft grey overlays and subtle light effects
 
 ## Hero Section - Dynamic News Animation
 
@@ -53,7 +54,7 @@
 ### 2. Technology Showcase (py-24)
 - **Grid:** 3-column feature cards (stacks to 1 column mobile)
 - **Features:** AI Detection, Autonomous Navigation, Chemical Extinguishing
-- **Card Design:** Dark card backgrounds with teal glow borders, icon + title + description
+- **Card Design:** Light card backgrounds with subtle borders, icon + title + description
 - **Icons:** Tech-focused iconography (brain/AI, navigation arrows, droplet/chemical)
 - **Visual Enhancement:** Animated SVG or Lottie drone loop in background
 
@@ -79,18 +80,18 @@
 ## Component Library
 
 ### Buttons
-- **Primary:** Orange/red glow with blur background (for hero images), solid dark background elsewhere
-- **Secondary:** Teal outline with transparent fill
+- **Primary:** Vibrant orange/red with white text for maximum impact
+- **Secondary:** Teal outline with transparent or light fill
 - **Sizing:** px-8 py-4 for prominence
 
 ### Cards
-- **Background:** Dark panels with subtle gradients
-- **Borders:** 1px teal glow or orange accent
+- **Background:** Light grey panels (slightly darker than page background)
+- **Borders:** Subtle grey borders
 - **Padding:** p-8 for breathing room
-- **Hover:** Subtle lift with increased glow intensity
+- **Hover:** Subtle elevation with shadow
 
 ### Typography Treatment
-- **Glow Effect:** Text-shadow with orange/teal on key headlines
+- **Emphasis:** Bold weights and color for key headlines
 - **Letter Spacing:** Increased tracking on taglines for impact
 
 ## Images
