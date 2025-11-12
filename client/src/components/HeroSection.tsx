@@ -108,9 +108,8 @@ export function HeroSection() {
         <div ref={mainContentRef} className="relative z-10 max-w-5xl mx-auto px-4 text-center">
           <div className="fade-in-element">
             <h1 
-              className="text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tight mb-6"
+              className="text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tight mb-6 text-foreground"
               style={{ 
-                textShadow: "0 0 40px rgba(255, 87, 34, 0.3), 0 0 80px rgba(255, 87, 34, 0.1)",
                 letterSpacing: "0.02em"
               }}
               data-testid="hero-tagline"

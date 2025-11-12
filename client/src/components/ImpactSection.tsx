@@ -26,10 +26,7 @@ export function ImpactSection() {
       <div className="max-w-7xl mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
           <h2 
-            className="text-4xl md:text-5xl font-extrabold mb-4"
-            style={{ 
-              textShadow: "0 0 30px rgba(0, 188, 212, 0.2)",
-            }}
+            className="text-4xl md:text-5xl font-extrabold mb-4 text-foreground"
             data-testid="text-impact-heading"
           >
             Real Impact, Measured in Lives
@@ -48,9 +45,6 @@ export function ImpactSection() {
             >
               <div 
                 className="text-5xl md:text-6xl lg:text-7xl font-extrabold text-primary mb-4"
-                style={{ 
-                  textShadow: "0 0 40px rgba(255, 87, 34, 0.4), 0 0 80px rgba(255, 87, 34, 0.2)",
-                }}
                 data-testid={`text-metric-value-${index}`}
               >
                 {metric.value}
