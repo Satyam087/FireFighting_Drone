@@ -23,18 +23,18 @@ export function AboutSection() {
           </h2>
           
           <div className="space-y-6 text-lg md:text-xl text-muted-foreground leading-relaxed">
-            <p data-testid="text-about-mission">
+            <p data-testid="text-about-mission-1">
               IgniraX was born from a simple truth: in fire emergencies, every second counts.
               Traditional response times leave gaps where lives hang in the balance.
             </p>
             
-            <p>
+            <p data-testid="text-about-mission-2">
               We've engineered autonomous drone systems that combine cutting-edge AI detection,
               precision navigation, and eco-safe chemical extinguishing to protect people—both
               indoors and outdoors—before conventional methods can arrive.
             </p>
             
-            <p className="text-foreground font-medium">
+            <p className="text-foreground font-medium" data-testid="text-about-mission-3">
               Our mission is clear: eliminate the deadly gap between fire outbreak and rescue response.
             </p>
           </div>

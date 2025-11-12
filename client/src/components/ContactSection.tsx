@@ -54,7 +54,7 @@ export function ContactSection() {
           >
             Partner with IgniraX to Redefine Rescue
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto" data-testid="text-contact-subheading">
             Whether you're a fire department, municipality, or enterprise—let's talk about
             protecting what matters most
           </p>
@@ -63,7 +63,7 @@ export function ContactSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div className="space-y-8">
             <div>
-              <h3 className="text-2xl font-bold mb-6 text-foreground">Get in Touch</h3>
+              <h3 className="text-2xl font-bold mb-6 text-foreground" data-testid="text-contact-form-heading">Get in Touch</h3>
               <Form {...form}>
                 <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
                   <FormField
@@ -158,25 +158,25 @@ export function ContactSection() {
 
           <div className="space-y-8">
             <div>
-              <h3 className="text-2xl font-bold mb-6 text-foreground">Partnership Opportunities</h3>
+              <h3 className="text-2xl font-bold mb-6 text-foreground" data-testid="text-partnership-heading">Partnership Opportunities</h3>
               <div className="space-y-4 text-muted-foreground">
-                <p className="text-lg">
+                <p className="text-lg" data-testid="text-partnership-intro">
                   We're actively seeking partnerships with:
                 </p>
                 <ul className="space-y-3 ml-4">
-                  <li className="flex items-start gap-3">
+                  <li className="flex items-start gap-3" data-testid="text-partnership-item-0">
                     <div className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0" />
                     <span>Fire departments and emergency response teams</span>
                   </li>
-                  <li className="flex items-start gap-3">
+                  <li className="flex items-start gap-3" data-testid="text-partnership-item-1">
                     <div className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0" />
                     <span>Municipal governments and smart city initiatives</span>
                   </li>
-                  <li className="flex items-start gap-3">
+                  <li className="flex items-start gap-3" data-testid="text-partnership-item-2">
                     <div className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0" />
                     <span>Industrial facilities and manufacturing plants</span>
                   </li>
-                  <li className="flex items-start gap-3">
+                  <li className="flex items-start gap-3" data-testid="text-partnership-item-3">
                     <div className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0" />
                     <span>Commercial real estate and property management</span>
                   </li>
@@ -185,35 +185,35 @@ export function ContactSection() {
             </div>
 
             <div className="border-t border-border pt-8">
-              <h3 className="text-xl font-bold mb-6 text-foreground">Contact Information</h3>
+              <h3 className="text-xl font-bold mb-6 text-foreground" data-testid="text-contact-info-heading">Contact Information</h3>
               <div className="space-y-4">
-                <div className="flex items-center gap-4">
+                <div className="flex items-center gap-4" data-testid="contact-info-email">
                   <div className="w-10 h-10 bg-secondary/10 rounded-lg flex items-center justify-center flex-shrink-0">
                     <Mail className="w-5 h-5 text-secondary" />
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">Email</p>
-                    <p className="text-foreground font-medium">contact@ignirax.com</p>
+                    <p className="text-foreground font-medium" data-testid="text-email">contact@ignirax.com</p>
                   </div>
                 </div>
                 
-                <div className="flex items-center gap-4">
+                <div className="flex items-center gap-4" data-testid="contact-info-phone">
                   <div className="w-10 h-10 bg-secondary/10 rounded-lg flex items-center justify-center flex-shrink-0">
                     <Phone className="w-5 h-5 text-secondary" />
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">Phone</p>
-                    <p className="text-foreground font-medium">+1 (555) IGNIRAX</p>
+                    <p className="text-foreground font-medium" data-testid="text-phone">+1 (555) IGNIRAX</p>
                   </div>
                 </div>
                 
-                <div className="flex items-center gap-4">
+                <div className="flex items-center gap-4" data-testid="contact-info-location">
                   <div className="w-10 h-10 bg-secondary/10 rounded-lg flex items-center justify-center flex-shrink-0">
                     <MapPin className="w-5 h-5 text-secondary" />
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">Headquarters</p>
-                    <p className="text-foreground font-medium">San Francisco, CA</p>
+                    <p className="text-foreground font-medium" data-testid="text-location">San Francisco, CA</p>
                   </div>
                 </div>
               </div>

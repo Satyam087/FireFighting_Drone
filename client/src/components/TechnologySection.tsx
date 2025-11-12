@@ -47,7 +47,7 @@ export function TechnologySection() {
           >
             Technology That Saves Lives
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto" data-testid="text-technology-subheading">
             Three revolutionary systems working in perfect harmony
           </p>
         </div>
@@ -68,7 +68,7 @@ export function TechnologySection() {
                   {tech.title}
                 </h3>
                 
-                <p className="text-muted-foreground leading-relaxed flex-grow">
+                <p className="text-muted-foreground leading-relaxed flex-grow" data-testid={`text-technology-description-${index}`}>
                   {tech.description}
                 </p>
               </div>

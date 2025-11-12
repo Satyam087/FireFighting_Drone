@@ -45,7 +45,7 @@ export function VisionSection() {
             Built to Save.
           </h2>
           
-          <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed" data-testid="text-vision-description">
             Every innovation at IgniraX is driven by one unwavering purpose:
             to eliminate the gap between danger and rescue.
           </p>
@@ -64,7 +64,7 @@ export function VisionSection() {
               <h3 className="text-2xl font-bold text-foreground mb-3" data-testid={`text-value-title-${index}`}>
                 {value.title}
               </h3>
-              <p className="text-muted-foreground">
+              <p className="text-muted-foreground" data-testid={`text-value-description-${index}`}>
                 {value.description}
               </p>
             </div>

@@ -34,7 +34,7 @@ export function ImpactSection() {
           >
             Real Impact, Measured in Lives
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto" data-testid="text-impact-subheading">
             Our technology isn't theoretical—it's saving lives every day
           </p>
         </div>
@@ -58,7 +58,7 @@ export function ImpactSection() {
               <div className="text-xl md:text-2xl font-bold text-foreground mb-2" data-testid={`text-metric-label-${index}`}>
                 {metric.label}
               </div>
-              <div className="text-muted-foreground">
+              <div className="text-muted-foreground" data-testid={`text-metric-description-${index}`}>
                 {metric.description}
               </div>
             </div>
