@@ -5,7 +5,9 @@ import { newsHeadlines } from "@/data/headlines";
 import { ChevronDown } from "lucide-react";
 
 export function HeroSection() {
-  const [showMainContent, setShowMainContent] = useState(false);
+  // default to true so the main hero content is visible if the intro
+  // headline animation doesn't run in the deployed build/environment
+  const [showMainContent, setShowMainContent] = useState(true);
   const headlinesRef = useRef<HTMLDivElement>(null);
   const mainContentRef = useRef<HTMLDivElement>(null);
 
