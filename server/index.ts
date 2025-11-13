@@ -72,6 +72,7 @@ app.use((req, res, next) => {
   // It is the only port that is not firewalled.
   const port = parseInt(process.env.PORT || '5000', 10);
   const host = process.env.HOST || '127.0.0.1';
+  
 
   // attach a graceful error handler so common listen errors don't crash with an unhandled exception
   server.on('error', (err: any) => {
