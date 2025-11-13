@@ -71,11 +71,23 @@ app.use((req, res, next) => {
   // this serves both the API and the client.
   // It is the only port that is not firewalled.
   const port = parseInt(process.env.PORT || '5000', 10);
-  server.listen({
-    port,
-    host: "0.0.0.0",
-    reusePort: true,
-  }, () => {
-    log(`serving on port ${port}`);
+  const host = process.env.HOST || '127.0.0.1';
+
+  // attach a graceful error handler so common listen errors don't crash with an unhandled exception
+  server.on('error', (err: any) => {
+    if (err && err.code === 'EADDRINUSE') {
+      log(`port ${port} is already in use. Try setting PORT to a different value and retry.`);
+      process.exit(1);
+    }
+    if (err && err.code === 'ENOTSUP') {
+      log(`listen not supported on requested socket: ${err.message}`);
+      process.exit(1);
+    }
+    // rethrow otherwise
+    throw err;
+  });
+
+  server.listen(port, host, () => {
+    log(`serving on ${host}:${port}`);
   });
 })();

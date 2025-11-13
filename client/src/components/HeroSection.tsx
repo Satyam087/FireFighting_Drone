@@ -108,7 +108,7 @@ export function HeroSection() {
         <div ref={mainContentRef} className="relative z-10 max-w-5xl mx-auto px-4 text-center">
           <div className="fade-in-element">
             <h1 
-              className="text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tight mb-6 text-foreground"
+              className="text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight mb-5 text-foreground"
               style={{ 
                 letterSpacing: "0.02em"
               }}
@@ -121,29 +121,28 @@ export function HeroSection() {
           </div>
           
           <div className="fade-in-element">
-            <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-3xl mx-auto font-light">
-              AI-powered autonomous drones protecting lives from fire with precision rescue,
-              detection, and eco-safe extinguishing technology
+            <p className="text-lg md:text-xl text-muted-foreground mb-10 max-w-3xl mx-auto font-light">
+              AI-driven Indoor Rescue Drones and Outdoor Fire-Combat Drones work together to detect trapped people,
+              map safe escape paths, and contain flames before firefighters arrive.
             </p>
           </div>
 
           <div className="fade-in-element flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button
               size="lg"
-              className="px-8 py-6 text-lg font-semibold bg-primary hover:bg-primary/90 shadow-lg shadow-primary/30"
+              className="px-6 py-3 text-base font-semibold bg-primary hover:bg-primary/90 shadow-md shadow-primary/20"
               onClick={() => document.getElementById("technology")?.scrollIntoView({ behavior: "smooth" })}
               data-testid="button-see-technology"
             >
-              See Technology
+              See How the System Works
             </Button>
             <Button
               size="lg"
-              variant="outline"
-              className="px-8 py-6 text-lg font-semibold border-secondary text-secondary hover:bg-secondary/10 backdrop-blur-sm"
+              className="px-6 py-3 text-base font-semibold bg-[#FF6231] hover:bg-[#ff4f12] text-white rounded-lg shadow-lg shadow-[#FF6231]/30"
               onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
               data-testid="button-contact-us"
             >
-              Contact Us
+              Book a Demo
             </Button>
           </div>
 
